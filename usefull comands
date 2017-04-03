@@ -1,0 +1,19 @@
+# list running container
+docker ps
+# list all the containers including stopped ones
+docker ps -a
+# kill images
+docker rmi [image id/name]
+# stop container
+docker stop [container id]
+# remove container
+docker rm [container id]
+
+# create image
+docker build -t [give an image name]
+
+# start container
+docker run [image name]
+
+# run container continuously
+docker run -d [image name] tail -f /dev/null
